@@ -1,0 +1,137 @@
+<div class="content">
+    <div class="background_img"></div>
+    <div class="header">
+        <app-navbar></app-navbar>
+        <div class="header__content">
+            
+            <div class="text">
+                <h1>Insectus</h1>
+                <h2>Ferma viitorului care se foloseste de un sistem circular pentru a oferi proteina de calitate</h2>
+                <div class="header__buttons">
+                    <button class="btn btn-light">Produsele noaste</button>
+                    <a class="btn_link" href="#despre">Despre noi! <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+
+        <div class="despre" id="despre">
+            <div class="despre__card">
+                <img class="despre__img" src="../../../assets/echipa 5.jpg" alt="Echipa Insectus">
+                <div class="despre__text">
+                    <p>La data de 9 Decembrie 2022 a fost formată echipa <span class="bold">'Insectus'</span>, cu ocazia unei competiții antreprenoriale organizate de universitate, la care au obținut performanțe foarte bune. Astfel, le-a fost confirmată necesitatea unei ferme de insecte și proiectul a fost demarat la scară largă.
+                        <br><br>
+                        Misiunea lor este de a rezolva criza alimentară prin oferirea unor alternative superioare, mai ieftine și mai inteligente pentru planetă: <span class="bold">insectele</span>.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="info">
+            <h2>De ce insecte?</h2>
+            <p>Creșterea accelerată a populației. Suntem 8 miliarde de oameni pe Pământ, un nou record stabilit recent, iar acest număr va continua să crească. Până în 2057 populația lumii va crește la 10 miliarde, iar acest fapt provoacă îngrijorare, în special din cauza deficitului de hrană din anumite zone geografice. Avem nevoie urgent de o sursă de hrană calitativă, accesibilă, și care folosește eficient resursele planetei.
+                <br><br>
+                Insectele sunt soluția noastră! Greierii, viermii, muștele și cărăbușii sunt surse de proteine de calitate, surse de aminoacizi, fier, calciu, vitamina B3, B6 și altele.</p>
+            
+        </div>
+
+        <hr>
+
+        <div class="info">
+            <h2>De ce Insectus?</h2>
+            <p>Insectus va fi singura fermă din România și Estul Europei care va produce soluții nutriționale, mai calitative și mai ieftine față de alternativele tradiționale destinate antreprenorilor din sectorul primar al economiei- agricultura.</p>
+        </div>
+
+        <hr>
+
+        <div class="info">
+            <h2>Profilul clientului</h2>
+            <p>Clienții noștri vor fi marile companii care activează în domeniul agriculturii și creșterii animalelor, dar și persoanele fizice: fermieri, pescari, grădinari. Ei sunt antreprenori cu o vârstă cuprinsă între 25 și 65 de ani, locuiesc preponderent în mediul rural, sunt pasionați de agricultură, creșterea animalelor sau piscicultură. Aceștria își doresc să ofere animalelor o hrană calitativă, bogată în vitamine, minerale și proteine la un preț cât mai avantajos.</p>
+        </div>
+
+        <hr>
+
+        <div class="slideshow">
+            <app-slideshow></app-slideshow>
+        </div>
+        
+        <div class="schema">
+            <h2>"The Loop of Life"</h2>
+            <p>Fiecare stadiu al vietii unei insecte are un loc bine definit si corelat cu celelalte stadii. Astfel, de la stadiul de larva, pana la maturitate si inapoi la larva, <span class="bold">nimic nu se pierde ci totul se consuma!</span></p>
+            <img src="../../../assets/schema2.png" class="schema__img" alt="">
+        </div>
+
+        <div class="compare">
+            <h2>Solutia noastră</h2>
+            <div class="chart ">
+
+                <div class="chart1">
+                    <p>Insectele produc mai putin gaz cu efect de sera si folosesc de mai putine furaje</p>
+                    <apx-chart [series]="chartOptions1.series"
+                        [chart]="chartOptions1.chart"
+                        [dataLabels]="chartOptions1.dataLabels"
+                        [plotOptions]="chartOptions1.plotOptions"
+                        [yaxis]="chartOptions1.yaxis"
+                        [legend]="chartOptions1.legend"
+                        [fill]="chartOptions1.fill"
+                        [stroke]="chartOptions1.stroke"
+                        [tooltip]="chartOptions1.tooltip"
+                        [xaxis]="chartOptions1.xaxis"
+                    ></apx-chart>
+                </div>
+                
+                <div class="chart2">
+                    <p>Cantitatea de apa si teren pentru producerea unui gram de proteina</p>
+                    <apx-chart [series]="chartOptions2.series"
+                        [chart]="chartOptions2.chart"
+                        [dataLabels]="chartOptions2.dataLabels"
+                        [plotOptions]="chartOptions2.plotOptions"
+                        [yaxis]="chartOptions2.yaxis"
+                        [legend]="chartOptions2.legend"
+                        [fill]="chartOptions2.fill"
+                        [stroke]="chartOptions2.stroke"
+                        [tooltip]="chartOptions2.tooltip"
+                        [xaxis]="chartOptions2.xaxis"
+                    ></apx-chart>
+                </div>
+                
+                <div class="chart3">
+                    <p>Greierii contin la fel de multa proteina ca si alte surse animale, si mai mult fier</p>
+                    <apx-chart
+                        [series]="chartOptions3.series"
+                        [chart]="chartOptions3.chart"
+                        [dataLabels]="chartOptions3.dataLabels"
+                        [plotOptions]="chartOptions3.plotOptions"
+                        [responsive]="chartOptions3.responsive"
+                        [xaxis]="chartOptions3.xaxis"
+                        [legend]="chartOptions3.legend"
+                        [fill]="chartOptions3.fill"
+                    ></apx-chart>
+                </div>
+                
+            </div>
+        </div>
+        
+        <div class="produse" id="produse">
+            <app-produse></app-produse>
+            <div class="produse__text">
+                <h3>Pentru mai multe detalii despre achizitionarea produselor, <a href="#contact">contactati-ne</a></h3>
+            </div>
+        </div>
+
+        <div class="contact" id="contact">
+            <div class="contact__card">
+                <h2>Informatii de contact</h2>
+                <p>Telefon: +40745 234 567</p>
+                <p>Email: contact@insectus.ro</p>
+                <p>Locatie: str. Aleea Studentilor nr. 2000</p>
+
+                <div class="social">
+                    <h2>Retele de socializare</h2>
+                    <a href="https://www.instagram.com/insectusfactory/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/insectusromania" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
