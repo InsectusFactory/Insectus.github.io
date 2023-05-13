@@ -1,4 +1,8 @@
 
+.carousel{
+    max-width: 80rem;
+    margin: 1rem auto;
+}
 
 .flex-column{
     h5{
@@ -6,5 +10,17 @@
     }
     p{
         font-size: 1.2rem;
+    }
+}
+
+
+@media screen and (min-width: 1000px) {
+    .carousel-caption{
+        h5{
+            font-size: 1.9rem;
+        }
+        p{
+            font-size: 1.5rm;
+        }
     }
 }

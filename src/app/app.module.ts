@@ -9,6 +9,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { NgApexchartsModule } from "ng-apexcharts";
 import { SlideshowComponent } from './components/slideshow/slideshow.component';
 import { ProduseComponent } from './components/produse/produse.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 
 
@@ -18,7 +19,8 @@ import { ProduseComponent } from './components/produse/produse.component';
     IndexComponent,
     NavbarComponent,
     SlideshowComponent,
-    ProduseComponent
+    ProduseComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

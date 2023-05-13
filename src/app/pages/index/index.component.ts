@@ -193,8 +193,8 @@ export class IndexComponent implements OnInit {
         ]
       },
       legend: {
-        position: "right",
-        offsetY: 40
+        position: "bottom",
+        offsetX: 40
       },
       fill: {
         opacity: 1
